@@ -1,0 +1,35 @@
+main.main_about {
+  div.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+
+    div.person_info {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img.person {
+        width: 100%;
+        min-width: 100px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main.main_about {
+    div.about {
+      div.person_info {
+        width: 45%;
+      }
+    }
+  }
+}
