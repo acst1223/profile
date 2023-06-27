@@ -255,3 +255,14 @@ main {
 div.indent {
   text-indent: 1em;
 }
+
+@media print {
+  header {
+    display: none;
+  }
+
+  main.center {
+    width: 100vw;
+    transform: none;
+  }
+}

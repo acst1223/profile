@@ -199,4 +199,16 @@ main.center {
 }
 div.indent {
   text-indent: 1em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media print {
+  header {
+    display: none;
+  }
+  main.center {
+    width: 100vw;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
